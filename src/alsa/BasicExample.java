@@ -1,19 +1,19 @@
 package alsa;
 
-import alsa.entity.Notebook;
+import alsa.entity.MutableNotebook;
 import alsa.entity.NotebookCategory;
 
 public class BasicExample {
 
     public static void main(String[] args) {
-        Notebook lenovo = new Notebook("Lenovo Yoga", 10_000, NotebookCategory.BASIC);
-        Notebook dell = new Notebook("Dell Inspiron", 20_000, NotebookCategory.WORK);
-        Notebook mcbook = new Notebook("McBook Air", 40_000, NotebookCategory.PROFESSIONAL);
-        Notebook msi = new Notebook("MSI", 30_000, NotebookCategory.GAMING);
+        MutableNotebook lenovo = new MutableNotebook("Lenovo Yoga", 10_000, NotebookCategory.BASIC);
+        MutableNotebook dell = new MutableNotebook("Dell Inspiron", 20_000, NotebookCategory.WORK);
+        MutableNotebook mcbook = new MutableNotebook("McBook Air", 40_000, NotebookCategory.PROFESSIONAL);
+        MutableNotebook msi = new MutableNotebook("MSI", 30_000, NotebookCategory.GAMING);
 
-        Notebook[] notebooks = new Notebook[] {lenovo, dell, mcbook, msi};
+        MutableNotebook[] notebooks = new MutableNotebook[] {lenovo, dell, mcbook, msi};
 
-        for (Notebook notebook : notebooks) {
+        for (MutableNotebook notebook : notebooks) {
             System.out.printf("%s %d %s\n", notebook.getName(), notebook.getPrice(), notebook.getCategory().toString());
         }
 

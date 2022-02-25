@@ -1,14 +1,14 @@
 package alsa.entity;
 
-public class Notebook {
+public class MutableNotebook {
 
     private String name;
     private int price;
-    private NotebookCategory category; //enum ro vycet prvku
+    private NotebookCategory category; //enum pro vycet prvku
 
     //konstruktor, s velkym pocatecnim pismenem podle tridy, jmeno musi byt stejne
 
-    public Notebook(String name, int price, NotebookCategory category) {
+    public MutableNotebook(String name, int price, NotebookCategory category) {
         this.name = name;
         this.price = price;
         this.category = category;
