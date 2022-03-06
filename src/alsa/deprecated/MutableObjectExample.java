@@ -1,6 +1,5 @@
-package alsa;
+package alsa.deprecated;
 
-import alsa.entity.MutableNotebook;
 import alsa.entity.NotebookCategory;
 
 public class MutableObjectExample {

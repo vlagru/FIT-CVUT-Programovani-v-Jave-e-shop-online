@@ -1,4 +1,6 @@
-package alsa.entity;
+package alsa.deprecated;
+
+import alsa.entity.NotebookCategory;
 
 public class MutableNotebook {
 
