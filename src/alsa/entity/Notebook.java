@@ -1,14 +1,25 @@
 package alsa.entity;
 
+import alsa.entity.part.ComputerPart;
+
 public class Notebook extends Product { // extends : dedi z rodice
 
     private final NotebookCategory category;
+    private final ComputerPart[] computerParts;
 
-    public Notebook(String name, double price, int count, NotebookCategory category) {
+    public Notebook(String name, double price, int count, NotebookCategory category, ComputerPart[] computerParts) {
         super(name, price, count); // super : odkaz na rodice
-        this.category = category; // pridam se categort do konstruktory predka Product
+        this.category = category; // pridam si category do konstruktory predka Product
+        this.computerParts = computerParts;
     }
 
+    public NotebookCategory getCategory() {
+        return category;
+    }
+
+    public ComputerPart[] getComputerParts() {
+        return computerParts;
+    }
 
 //    //abych udelal immutable, pouziju klicove slovo final + ((primitivni) datovy typ - tam se jen prirazuje)/objekty musi byt 'prone to', aby byl immutable
 //    //--- coz vsechny tyto tri typy jsou
