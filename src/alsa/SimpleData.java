@@ -10,6 +10,7 @@ import alsa.entity.part.ProcessorSpeed;
 
 public class SimpleData {
 
+    // !!!!!!!!!!!!!!!!!!!!!!!!!!!! proc statik u atributu !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     public final static Processor intel = new Processor(ProcessorSpeed.FAST);
     public final static Processor amd = new Processor(ProcessorSpeed.FAST);
 

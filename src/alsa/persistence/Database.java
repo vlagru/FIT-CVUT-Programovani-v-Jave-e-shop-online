@@ -7,7 +7,7 @@ public interface Database {
 
     Product[] getProducts();
 
-    Product getProduct (String name);
+    Product getProductByName (String name);
 
     void saveProduct(Product product);
 

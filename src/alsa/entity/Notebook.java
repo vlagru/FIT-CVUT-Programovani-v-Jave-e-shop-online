@@ -21,6 +21,22 @@ public class Notebook extends Product { // extends : dedi z rodice
         return computerParts;
     }
 
+    // vytvori novy 'Notebook' se zvysenym / snizenym poctem
+    @Override
+    public Product withIncreasedCount() {
+        return new Notebook(name, price, count + 1, category, computerParts);
+    }
+
+    @Override
+    public Product withDecreasedCount() {
+        return new Notebook(name, price, count - 1, category, computerParts);
+    }
+
+    @Override
+    public boolean hasSpecialGuarantee() {
+        return true;
+    }
+
 //    //abych udelal immutable, pouziju klicove slovo final + ((primitivni) datovy typ - tam se jen prirazuje)/objekty musi byt 'prone to', aby byl immutable
 //    //--- coz vsechny tyto tri typy jsou
 //    private final String name;

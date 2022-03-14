@@ -15,16 +15,18 @@ public class InMemoryDatabase implements Database {
     }
 
     @Override
-    public Product getProduct(String name) {
+    public Product getProductByName(String name) {
         for (Product product : products) {
             if (product.getName().equals(name))
                 return product;
         }
         throw new ArrayIndexOutOfBoundsException(); // proc zde 'new'
     }
+
+    // TODO tohle jeste probrat na hodine, a proc 'produkt' podtrzeny?
     @Override
     public void saveProduct(Product product) {
-    products.removeIf(productInDb -> productInDb.getName().equals(product.getName())); // proc podtrzene
+    products.removeIf(productInDb -> productInDb.getName().equals(product.getName()));
     products.remove(product);
     }
 

@@ -2,9 +2,10 @@ package alsa.entity;
 
 public abstract class Product {
 
-    private final String name;
-    private final double price;
-    private final int count;
+    // musim zmenit z PRIVATE na PROTECTED, aby bylo videt i v jine tride
+    protected final String name;
+    protected final double price;
+    protected final int count;
 
     public Product(String name, double price, int count) {
         this.name = name;
@@ -23,4 +24,8 @@ public abstract class Product {
     public int getCount() {
         return count;
     }
+
+    public abstract Product withIncreasedCount();
+    public abstract Product withDecreasedCount();
+    public abstract boolean hasSpecialGuarantee();
 }
