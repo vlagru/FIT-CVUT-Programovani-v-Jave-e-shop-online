@@ -1,3 +1,4 @@
+/*
 package alsa.deprecated;
 
 import alsa.entity.NotebookCategory;
@@ -42,3 +43,4 @@ public class MutableNotebook {
         this.category = category;
     }
 }
+*/

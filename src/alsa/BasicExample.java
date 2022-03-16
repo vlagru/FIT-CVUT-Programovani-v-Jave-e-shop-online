@@ -1,7 +1,9 @@
 package alsa;
 
 import alsa.entity.Notebook;
+import alsa.persistence.InMemoryDatabase;
 import alsa.service.EshopService;
+import alsa.service.EshopServiceImpl;
 
 import static alsa.SimpleData.*;
 import static alsa.entity.NotebookCategory.*;
@@ -10,7 +12,7 @@ public class BasicExample {
 
     // !!!!!!!!!!! nerozumim, proc se zde dela tato metoda !!!!!!!!!!!!!!!!!!!!!!!
     private static EshopService createEshop() {
-
+        return new EshopServiceImpl(new InMemoryDatabase());
     }
 
     public static void main(String[] args) {

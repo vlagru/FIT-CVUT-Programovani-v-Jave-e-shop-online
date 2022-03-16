@@ -1,3 +1,4 @@
+/*
 package alsa.deprecated;
 
 import alsa.entity.NotebookCategory;
@@ -26,3 +27,4 @@ public class MutableObjectExample {
 //        printNotebook(dell);
     }
 }
+*/

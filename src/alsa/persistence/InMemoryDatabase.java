@@ -27,7 +27,7 @@ public class InMemoryDatabase implements Database {
     @Override
     public void saveProduct(Product product) {
     products.removeIf(productInDb -> productInDb.getName().equals(product.getName()));
-    products.remove(product);
+    products.add(product);
     }
 
     @Override

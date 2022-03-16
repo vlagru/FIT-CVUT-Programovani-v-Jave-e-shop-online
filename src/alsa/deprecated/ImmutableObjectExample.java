@@ -1,3 +1,4 @@
+/*
 package alsa.deprecated;
 
 import alsa.entity.Notebook;
@@ -28,3 +29,4 @@ public class ImmutableObjectExample {
 //        printNotebook(dell);
     }
 }
+*/
